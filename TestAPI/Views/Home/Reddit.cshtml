@@ -1,0 +1,14 @@
+﻿@model IEnumerable<TestAPI.Models.Post>
+
+
+<h2>Poormans Reddit: </h2>
+
+@ViewBag.r
+@foreach (var o in Model)
+{
+    <a href="@o.LinkURL">
+        <h2>@o.Title</h2>
+        
+        <img scr ="@o.ImageURL"/>
+    </a>
+}
